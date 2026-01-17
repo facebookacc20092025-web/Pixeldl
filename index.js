@@ -44,7 +44,7 @@ const PLATFORM_CONFIG = {
   unknown: {
     requestTimeout: 60000,
     heartbeatInterval: 30000,
-    maxDirectSize: 100 * 1024 * 1024
+    maxDirectSize: 2000 * 1024 * 1024
   }
 };
 
