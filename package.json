@@ -1,0 +1,40 @@
+{
+  "name": "vps-proxy-server",
+  "version": "1.0.0",
+  "description": "Proxy server to bypass IP blocking for Pixeldrain and other services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prod": "NODE_ENV=production node --max-old-space-size=1536 index.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "monitor": "node monitor.js",
+    "cleanup": "node cleanup.js"
+  },
+  "keywords": [
+    "proxy",
+    "streaming",
+    "pixeldrain",
+    "vps",
+    "bypass"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
